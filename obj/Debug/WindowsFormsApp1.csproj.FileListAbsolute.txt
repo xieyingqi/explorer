@@ -8,3 +8,13 @@ E:\2_my_git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.
 E:\2_my_git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 E:\2_my_git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\2_my_git\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\2_my_git\explorer\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\2_my_git\explorer\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\2_my_git\explorer\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\2_my_git\explorer\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\2_my_git\explorer\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\2_my_git\explorer\bin\Debug\WindowsFormsApp1.exe.config
+E:\2_my_git\explorer\bin\Debug\WindowsFormsApp1.exe
+E:\2_my_git\explorer\bin\Debug\WindowsFormsApp1.pdb
+E:\2_my_git\explorer\obj\Debug\WindowsFormsApp1.exe
+E:\2_my_git\explorer\obj\Debug\WindowsFormsApp1.pdb
