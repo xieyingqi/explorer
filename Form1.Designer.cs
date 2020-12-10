@@ -32,8 +32,9 @@ namespace WindowsFormsApp1
             this.diskList = new System.Windows.Forms.ListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dirList = new System.Windows.Forms.ListView();
             this.btnBack = new System.Windows.Forms.Button();
+            this.dirList = new System.Windows.Forms.ListView();
+            this.btnAddTab = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,7 @@ namespace WindowsFormsApp1
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(599, 424);
             this.tabControl1.TabIndex = 1;
+            this.tabControl1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseDoubleClick);
             // 
             // tabPage1
             // 
@@ -72,15 +74,6 @@ namespace WindowsFormsApp1
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dirList
-            // 
-            this.dirList.Location = new System.Drawing.Point(0, 0);
-            this.dirList.Name = "dirList";
-            this.dirList.Size = new System.Drawing.Size(595, 401);
-            this.dirList.TabIndex = 0;
-            this.dirList.UseCompatibleStateImageBehavior = false;
-            this.dirList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dirList_MouseDoubleClick);
-            // 
             // btnBack
             // 
             this.btnBack.Location = new System.Drawing.Point(421, 6);
@@ -91,12 +84,32 @@ namespace WindowsFormsApp1
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // dirList
+            // 
+            this.dirList.Location = new System.Drawing.Point(0, 0);
+            this.dirList.Name = "dirList";
+            this.dirList.Size = new System.Drawing.Size(595, 401);
+            this.dirList.TabIndex = 0;
+            this.dirList.UseCompatibleStateImageBehavior = false;
+            this.dirList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dirList_MouseDoubleClick);
+            // 
+            // btnAddTab
+            // 
+            this.btnAddTab.Location = new System.Drawing.Point(63, 368);
+            this.btnAddTab.Name = "btnAddTab";
+            this.btnAddTab.Size = new System.Drawing.Size(75, 23);
+            this.btnAddTab.TabIndex = 2;
+            this.btnAddTab.Text = "addTab";
+            this.btnAddTab.UseVisualStyleBackColor = true;
+            this.btnAddTab.Click += new System.EventHandler(this.btnAddTab_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 447);
+            this.Controls.Add(this.btnAddTab);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.diskList);
             this.Name = "Form1";
@@ -115,6 +128,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ListView dirList;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnAddTab;
     }
 }
 

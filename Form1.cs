@@ -127,5 +127,33 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        /*
+         * 新
+         * 
+         */
+        private void btnAddTab_Click(object sender, EventArgs e)
+        {
+            TabPage page = new TabPage();
+            page.Text = "new";
+            page.Name = "newPage";
+
+            ListView list = new ListView();
+            list.Dock = DockStyle.Fill;
+
+            //增加其他按钮
+
+            page.Controls.Add(list);
+            tabControl1.TabPages.Add(page);
+        }
+
+        private void tabControl1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (tabControl1.TabCount > 1)
+            {
+                tabControl1.TabPages.RemoveAt(tabControl1.SelectedIndex); //双击关闭页面
+                tabControl1.SelectedIndex = tabControl1.TabCount - 1;     //索引到最后一个页面
+            }
+        }
     }
 }
